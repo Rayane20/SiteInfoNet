@@ -1,0 +1,80 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info-net</title>
+</head>
+<!-- @media all and (max-width : 768px)
+"Applique ces styles tant que le viewport fait un maximum de 768px (donc 768 ou moins)"
+mnémotechnique :  max = en dessous de 
+
+@media all and (min-width : 768px) 
+"Applique ces styles tant que le viewport fait un minimum de 768px (donc 768 ou plus)"
+mnémotechnique :  min = au délà de 
+c'est les concepts de mobile-first / desktop-first.
+Selon si tu codes en partant d'un mobile viewport (pour augmenter vers Desktop)
+ou d'un desktop viewport (pour réduire vers Mobile) -->
+<body>
+    <nav>
+        <img id="imageLogo" src="./ordinateur photo SVG.png">
+        
+        <div id="logo">Info Net</div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <div class="hover-underline-animation">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li>
+                        <label for="drop-1" class="toggle">Gestion de Parcs </label>
+                        <a href="index.html">Gestion de Parcs </a>
+                        <input type="checkbox" id="drop-1"/>
+                        <ul>
+                            <li><a href="#">Télémaintenance</a></li>
+                            <li><a href="#">Audits & Conseils</a></li>
+                            <li><a href="#">Inventaire matériels et logiciels</a></li>
+                            <li><a href="#">Vente de matériels et logiciels</a></li>
+
+                        </ul> 
+                    </li>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">Web Design </label>
+                        <a href="#">Web Design</a>
+                        <input type="checkbox" id="drop-2"/>
+                        <ul>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="drop-3" class="toggle">Graphic Design </label>
+                        <a href="#">Graphic Design</a>
+                        <input type="checkbox" id="drop-3"/>
+                        <ul>
+                            <li><a href="#">items 1</a></li>
+                            <li><a href="#">items 2</a></li>
+                            <li><a href="#">items 3</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+              </div>
+          </div>
+    </nav>
+        <div class="bloc">
+            
+        <p> A simple dropdown navigation menu made with CSS Only. Dropdowns are marked with a plus sign ( + ) <br>
+        <p> Resize the screen to see the look if the screen is smaller then 768px </p>
+            
+        </div>
+
+</body>
+</html>
